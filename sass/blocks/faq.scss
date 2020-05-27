@@ -1,0 +1,84 @@
+.faq {
+  padding-top: 35px;
+  &__title {
+    h2 {
+      margin-top: 0;
+      margin-bottom: 15px;
+
+      font-weight: 700;
+      font-size: 50px;
+      font-family: "Comfortaa", cursive;
+      text-align: center;
+      color: #05b6df;
+    }
+  }
+}
+.faq-spoiler {
+  &__content {
+    display: none;
+    padding: 25px;
+    padding-bottom: 0;
+    padding-left: 60px;
+
+    color: #444444;
+  }
+  &__item {
+    margin-bottom: 30px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    &:hover,
+    &.active {
+      .faq-spoiler__bar {
+        border: 1px solid #0494c1;
+        &:before {
+          background-color: #0494c1;
+        }
+      }
+    }
+  }
+  &__bar {
+    position: relative;
+
+    padding-left: 50px;
+
+    font-weight: 300;
+    font-size: 20px;
+    color: #444444;
+
+    border: 1px solid #05b6df;
+    border-radius: 15px;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+    span {
+      display: block;
+      padding: 10px;
+
+      background-color: #ffffff;
+      border-radius: 10px;
+      transform: translateX(-5px);
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+
+      width: 70px;
+
+      background: #05b6df url(../img/chill/snow.svg) 10px center no-repeat;
+      border-radius: 10px 0 0 10px;
+
+      transition: all 0.3s ease;
+    }
+  }
+}
+@media screen and (max-width: 969px) {
+  .faq {
+    h2 {
+      font-size: 40px;
+    }
+  }
+}

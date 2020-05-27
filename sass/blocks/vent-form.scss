@@ -1,0 +1,82 @@
+.vent-form {
+  padding-top: 45px;
+  h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+
+    font-weight: 700;
+    font-size: 50px;
+    font-family: "Comfortaa", cursive;
+    text-align: center;
+    color: #6cb835;
+  }
+  &__p {
+    margin-top: 0;
+    margin-bottom: 35px;
+
+    font-weight: 700;
+    font-size: 25px;
+    font-family: "Comfortaa", cursive;
+    text-align: center;
+    color: #7e7e7e;
+  }
+  form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 520px;
+    margin-right: auto;
+    margin-left: auto;
+    input {
+      box-sizing: border-box;
+      width: 150px;
+      padding: 10px 15px;
+
+      font-size: 20px;
+      color: #7e7e7e;
+
+      border: 1px solid #6cb835;
+      border-radius: 7px;
+      &[type="submit"] {
+        color: #ffffff;
+
+        background-color: #6cb835;
+        cursor: pointer;
+        &:hover {
+          color: #6cb835;
+
+          background-color: #ffffff;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 969px) {
+  .vent-form {
+    padding-top: 20px;
+    h2 {
+      font-size: 45px;
+    }
+  }
+}
+@media screen and (max-width: 759px) {
+  .vent-form {
+    h2 {
+      font-size: 40px;
+    }
+    form {
+      flex-direction: column;
+      width: 100%;
+      input {
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 479px) {
+  .vent-form {
+    h2 {
+      font-size: 38px;
+    }
+  }
+}

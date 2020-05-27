@@ -1,0 +1,130 @@
+.all-country {
+  margin-bottom: 50px;
+  padding-top: 45px;
+  h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+
+    font-weight: 700;
+    font-size: 50px;
+    font-family: "Comfortaa", cursive;
+    text-align: center;
+    color: #05b6df;
+  }
+  &__subtitle {
+    margin-bottom: 45px;
+
+    font-weight: 700;
+    font-size: 25px;
+    font-family: "Comfortaa", cursive;
+    text-align: center;
+    color: #05b6df;
+  }
+  &__table {
+    height: 398px;
+    margin-bottom: 40px;
+    overflow: hidden;
+
+    transition-duration: 0.3s;
+    transition-property: height;
+    table {
+      border-collapse: collapse;
+      th {
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+        color: #444444;
+
+        background: #b5f1ff;
+        border-radius: 5px;
+      }
+      tr {
+        background: #f2fdff;
+        &:nth-of-type(2n + 1) {
+          background: #e6f7fb;
+        }
+        td {
+          padding: 15px;
+
+          font-size: 14px;
+          color: #444444;
+
+          border: none;
+        }
+      }
+    }
+    &.full {
+      height: auto;
+    }
+  }
+  &__spoiler-btn {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 10px;
+    padding-right: 32px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+
+    font-size: 20px;
+    color: #6cb835;
+
+    background-color: white;
+    border: 1px solid #6cb835;
+    border-radius: 7px;
+    cursor: pointer;
+    span {
+      font-size: 16px;
+    }
+    &:hover {
+      color: #ffffff;
+
+      background-color: #6cb835;
+    }
+  }
+}
+@media screen and (max-width: 969px) {
+  .all-country {
+    padding-top: 20px;
+    h2 {
+      font-size: 45px;
+    }
+  }
+}
+@media screen and (max-width: 759px) {
+  .all-country {
+    h2 {
+      font-size: 40px;
+    }
+    &__subtitle {
+      font-size: 20px;
+    }
+    &__table {
+      height: 428px;
+      table tr {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+@media screen and (max-width: 479px) {
+  .all-country {
+    h2 {
+      font-size: 38px;
+    }
+    &__subtitle {
+      font-size: 18px;
+    }
+    &__table {
+      height: 428px;
+      table tr {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
